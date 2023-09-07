@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('/static/bg.jpg') no-repeat fixed;
+    background-size: 50%;
+    background-position: left;
+}
+
+.container {
+    border-left: 2px solid white;
+    padding: 40px;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    width: 23%;
+}
+
+.container h1 a {
+    color: black;
+    font-family: 'Lato';
+    text-decoration: none;
+    font-size: 40px;
+    margin-bottom: 5px;
+    padding: 13px 0px
+}
+
+.box {
+    width: 100%;
+    border-bottom: 2px solid whitesmoke;
+    margin: 12px 0;
+}
+
+.box input {
+    background: none;
+    width: 75%;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+
+.box i {
+    width: 25px;
+    text-align: center;
+    color: black;
+}
+
+.btn {
+    color: black;
+    cursor: pointer;
+    outline: none;
+    width: 30%;
+    margin: 12px 0;
+    padding: 7px 6px;
+    border-radius: 5px;
+    font-size: 15px;
+    /* background: none; */
+}
+
+.btn:hover {
+    color: white;
+    background: rgba(19, 19, 99, 0.501);
+}
+
+.noacc {
+    font-family: Lato;
+    color: black;
+}
+
+#signup {
+    color: black;
+    text-decoration: none;
+}

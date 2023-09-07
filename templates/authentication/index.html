@@ -1,29 +1,32 @@
 <!DOCTYPE html>
+
+{% load static %}
 <html>
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-  <link rel="stylesheet" href="./global.css" />
-  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="{% static 'global.css' %}" />
+  <link rel="stylesheet" href="{% static 'index.css' %}" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" />
 </head>
 
 <body>
 
   {%for message in messages%}
-  <div class="alert alert-{{message.tags}}alert-dismissible fade show" role="alert">
-    <strong>Message:</strong>{{message}}
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+    <strong>Message:</strong> {{ message }}
+    <button type="button" class="close" data-dismiss="alert" aria-label="close">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
-  {%endfor%}
+  {% endfor %}
 
   {% if user.is_authenticated %}
   <h3>hello {{ username }} </h3>
   <h4>Login successful</h4>
+  <button type="submit"><a href="/signout">logout</a></button>
 
   {%else%}
   <button type="submit"><a href="/signup">signup</a></button>
@@ -76,7 +79,7 @@
           </span>
         </p>
       </div>
-      <img class="image-7-icon" alt="" src="./public/image-7@2x.png" />
+      <img class="image-7-icon" alt="" src="{%static 'public/image-7@2x.png'%}" />
 
       <div class="macbook-air-1-child"></div>
     </div>
@@ -90,7 +93,7 @@
         </p>
       </div>
     </div>
-    <img class="image-8-icon" alt="" src="./public/image-8@2x.png" />
+    <img class="image-8-icon" alt="" src="{% static '/public/image-8@2x.png' %}" />
 
     <div class="features-some-of-container">
       <p class="companion">
@@ -113,15 +116,15 @@
       <div class="cognitive-behavioral-therapy">
         Cognitive Behavioral Therapy
       </div>
-      <img class="brain-medical-health-brain-icon" alt="" src="./public/brainmedicalhealthbrain.svg" />
+      <img class="brain-medical-health-brain-icon" alt="" src="{%static 'public/brainmedicalhealthbrain.svg'%}" />
     </div>
     <div class="certified-resources-parent">
       <div class="certified-resources">Certified Resources</div>
-      <img class="online-medical-service-monitor-icon" alt="" src="./public/onlinemedicalservicemonitor.svg" />
+      <img class="online-medical-service-monitor-icon" alt="" src="{%static 'public/onlinemedicalservicemonitor.svg'%}" />
     </div>
     <div class="access-parent">
       <div class="access">24/7 Access</div>
-      <img class="call-center-support-service-icon" alt="" src="./public/callcentersupportservice.svg" />
+      <img class="call-center-support-service-icon" alt="" src="{%static 'public/callcentersupportservice.svg'%}" />
     </div>
     <div class="personalized-feedback-parent">
       <div class="personalized-feedback">Personalized feedback</div>
