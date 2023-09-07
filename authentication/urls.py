@@ -9,4 +9,5 @@ urlpatterns = [
     path('signup', views.signup, name='signup'),
     path('login', views.login, name='login'),
     path('signout', views.signout, name='signout'),
+    path('dashboard', views.dashboard, name='dashboard'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -40,7 +40,7 @@ def login(request):
         if user is not None:
             dj_login(request, user)
             fname = user.username
-            return render(request, 'authentication/index.html', {'fname': fname})
+            return render(request, 'authentication/dashboard.html')
 
         else:
             messages.error(request, 'Bad credentials')
@@ -50,5 +50,8 @@ def login(request):
 
 def signout(request):
     logout(request)
-    messages.success(request, 'logged out successfully')
+    # messages.success(request, 'logged out successfully')
     return redirect('home')
+
+def dashboard(request):
+    return render(request, 'authentication/dashboard.html')
