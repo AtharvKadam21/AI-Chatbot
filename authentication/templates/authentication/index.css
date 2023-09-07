@@ -1,0 +1,210 @@
+.mindbot {
+  margin: 0;
+  font-weight: 600;
+}
+.your-own-healthcare1 {
+  font-weight: 500;
+}
+.your-own-healthcare {
+  margin: 0;
+  font-size: var(--font-size-29xl);
+}
+.companion {
+  margin: 0;
+}
+.an-ai-powered-mental-health-we {
+  margin: 0;
+  font-size: var(--font-size-5xl);
+}
+.mindbot-your-own-container {
+  position: absolute;
+  top: 110px;
+  left: 119px;
+  display: inline-block;
+  width: 990px;
+  height: 488px;
+}
+.image-7-icon {
+  position: absolute;
+  top: 110px;
+  left: 822px;
+  width: 734px;
+  height: 486px;
+  object-fit: cover;
+}
+.macbook-air-1,
+.macbook-air-1-child {
+  position: absolute;
+  top: 731px;
+  left: 233px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.macbook-air-1 {
+  top: 214px;
+  left: 0;
+  background-color: var(--color-white);
+  width: 1556px;
+  height: 625px;
+  text-align: left;
+  font-size: 96px;
+}
+.offers-information-emotional {
+  margin: 0;
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+}
+.human-like-conversations-with-container {
+  position: absolute;
+  top: 122px;
+  left: 767px;
+  display: inline-block;
+  width: 397px;
+  height: 421px;
+}
+.human-like-conversations-with-wrapper {
+  position: absolute;
+  top: 928px;
+  left: 125px;
+  border-radius: 12px;
+  background-color: #fdf5f5;
+  width: 1366px;
+  height: 608px;
+  overflow: hidden;
+  text-align: left;
+}
+.image-8-icon {
+  position: absolute;
+  top: 1045px;
+  left: 283px;
+  width: 381px;
+  height: 387px;
+  object-fit: cover;
+}
+.features1 {
+  font-weight: 600;
+}
+.cognitive-behavioral-therapy,
+.features-some-of-container {
+  position: absolute;
+  top: 1600px;
+  left: 587px;
+  display: inline-block;
+  width: 452px;
+  height: 194px;
+}
+.cognitive-behavioral-therapy {
+  top: 133px;
+  left: 39px;
+  font-weight: 500;
+  width: 308px;
+  height: 198px;
+}
+.brain-medical-health-brain-icon {
+  position: absolute;
+  top: 47px;
+  left: 166px;
+  width: 53px;
+  height: 53px;
+  overflow: hidden;
+}
+.cognitive-behavioral-therapy-parent {
+  position: absolute;
+  top: 1891px;
+  left: 299px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-peachpuff);
+  width: 386px;
+  height: 358px;
+  overflow: hidden;
+}
+.certified-resources {
+  position: absolute;
+  top: 160px;
+  left: 68px;
+  font-weight: 500;
+  display: inline-block;
+  width: 249px;
+  height: 102px;
+}
+.certified-resources-parent,
+.online-medical-service-monitor-icon {
+  position: absolute;
+  top: 85px;
+  left: 170px;
+  width: 46px;
+  height: 46px;
+  overflow: hidden;
+}
+.certified-resources-parent {
+  top: 2392px;
+  left: 887px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-peachpuff);
+  width: 386px;
+  height: 358px;
+}
+.access {
+  position: absolute;
+  top: 158px;
+  left: 72px;
+  font-weight: 500;
+  display: inline-block;
+  width: 246px;
+  height: 132px;
+}
+.access-parent,
+.call-center-support-service-icon {
+  position: absolute;
+  top: 73px;
+  left: 170px;
+  width: 46px;
+  height: 46px;
+  overflow: hidden;
+}
+.access-parent {
+  top: 1883px;
+  left: 887px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-lightblue);
+  width: 386px;
+  height: 358px;
+}
+.personalized-feedback {
+  position: absolute;
+  top: 148px;
+  left: 39px;
+  font-weight: 500;
+  display: inline-block;
+  width: 307px;
+  height: 140px;
+}
+.copy-paste-clipboard-copy-cut-icon,
+.personalized-feedback-parent {
+  position: absolute;
+  top: 84px;
+  left: 169px;
+  width: 47px;
+  height: 47px;
+  overflow: hidden;
+}
+.personalized-feedback-parent {
+  top: 2392px;
+  left: 283px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-lightblue);
+  width: 386px;
+  height: 358px;
+}
+.macbook-air-1-parent {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 3306px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-29xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
