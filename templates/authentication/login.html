@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,30 @@
     <link rel="stylesheet" href="login.css">
     <title>Login</title>
 </head>
+
 <body>
     <div class="container">
-        <h1><a href="main.html">MeldTv</a></h1>
-        <div class="box">
-            <i class="fa-solid fa-user"></i>
-            <input type="text" name="username" id="username" placeholder="Username, Email, Phone number">
-        </div>
-        <div class="box">
-            <i class="fas fa-lock"></i>
-            <input type="password" name="password" id="password" placeholder="Password">
-        </div>
-        <button class="btn">Log In</button>
+        <h1><a href="/index">MindBot</a></h1>
+        <form action="/login" method="post">
+            {% csrf_token %}
 
-        <div class="noacc">
-            <a id=signup href="signup.html">Don't have an account?</a>
-        </div>
-    </div>    
-    
+            <div class="box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="username" id="username" placeholder="Username, Email, Phone number" required>
+            </div>
+            <div class="box">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn">Log In</button>
+
+            <div class="noacc">
+                <a id=signup href="/signup">Don't have an account?</a>
+            </div>
+
+        </form>
+    </div>
+
 </body>
+
 </html>
