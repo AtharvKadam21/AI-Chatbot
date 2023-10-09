@@ -1,3 +1,57 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #F6EDED;
+  margin: 15px;
+  border-radius: 5px;
+  background-color: #F6EDED;
+}
+
+.left-items{
+  display: flex;
+  margin: 10px;
+  padding-top: 5px;
+  list-style: none;
+  font-family: var(--font-inter);
+  width: max-content;
+}
+
+.right-items{
+  display: flex;
+  list-style: none;
+  margin: 10px;
+}
+
+.icon{
+  width: 25px;
+  height: 25px;
+}
+
+li{
+  padding: 10px;
+}
+
+.btn{
+  align-items: flex-end;
+  text-decoration: none;
+  border: 2px solid #DEC7C7;
+  border-radius: 5px;
+  background-color: #DEC7C7;
+  font-family: var(--font-inter);
+  text-decoration: none;
+}
+
+.navbutton{
+  border: none;
+  font-family: var(--font-inter);
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
 .mindbot {
   margin: 0;
   font-weight: 600;
@@ -26,12 +80,15 @@
 }
 .image-7-icon {
   position: absolute;
-  top: 110px;
-  left: 822px;
-  width: 734px;
-  height: 486px;
-  object-fit: cover;
+  top: 0px;
+  left: 809px;
+  width: 611px;
+  height: 423px;
 }
+
+
+
+
 .macbook-air-1,
 .macbook-air-1-child {
   position: absolute;
@@ -48,7 +105,7 @@
   width: 1556px;
   height: 625px;
   text-align: left;
-  font-size: 96px;
+  font-size: 20px;
 }
 .offers-information-emotional {
   margin: 0;
@@ -81,6 +138,8 @@
   width: 381px;
   height: 387px;
   object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
 }
 .features1 {
   font-weight: 600;
@@ -198,10 +257,7 @@
   height: 358px;
 }
 .macbook-air-1-parent {
-  position: relative;
-  background-color: var(--color-white);
-  width: 100%;
-  height: 3306px;
+  height: 2000px;
   overflow: hidden;
   text-align: center;
   font-size: var(--font-size-29xl);

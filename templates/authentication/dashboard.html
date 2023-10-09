@@ -44,17 +44,27 @@
         </button>
     </div>
     {% endfor %}
-
-    {% if user.is_authenticated %}
+    <div>
+        
+        {% if user.is_authenticated %}
     <h4>Hello User! </h4>
     <h4>Login successful</h4>
-
+    
     {%else%}
     <button type="submit"><a href="/signup">signup</a></button>
     <button type="submit"><a href="/login">login</a></button>
-
+    
     {%endif%}
     <p>Select an option to continue</p>
+
+    <div id="chatbot">
+        <p>Start chatting</p>
+        <form action="">
+            <input type="textarea" name="" id="">
+        </form>
+    </div>
+
+</div>
 </body>
 
 </html>

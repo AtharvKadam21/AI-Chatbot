@@ -14,16 +14,30 @@
 
 <body>
 
-  {% if user.is_authenticated %}
-  <button type="submit"><a href="/signout">Sign out</a></button>
 
-  {%else%}
-  <button type="submit"><a href="/signup">signup</a></button>
-  <button type="submit"><a href="/login">login</a></button>
-
+  <nav class="navbar">
+    <ul class="left-items">
+        <li><img class='icon' src="/static/public/icon.png" alt=""></li>
+        <li><button class="navbutton" onclick="scrollToSection('section1')">About</button></li>
+        <li><button class="navbutton" onclick="scrollToSection('section2')">Features</button></li>
+        <li><button class="navbutton" onclick="scrollToSection('section2')">FAQ</button></li>    
+    </ul>
+    <ul class="right-items">
+        <li>
+          {% if user.is_authenticated %}
+          <button class="btn" type="submit"><a href="/signout">Sign out</a></button>
+          {%else%}
+          <button class="btn" type="submit"><a href="/signup">Sign Up</a></button>
+          <button class="btn" type="submit"><a href="/login">Login</a></button>
+        </li>
+      </ul>
+    </div>
+  </nav>
   {%endif%}
 
+  
   <div class="macbook-air-1-parent">
+    <section>
     <div class="macbook-air-1">
       <div class="mindbot-your-own-container">
         <p class="mindbot">MindBot</p>
@@ -72,7 +86,9 @@
 
       <div class="macbook-air-1-child"></div>
     </div>
-    <div class="human-like-conversations-with-wrapper">
+  </section>  
+  <section>    
+    <div class="human-like-conversations-with-wrapper" id="section1">
       <div class="human-like-conversations-with-container">
         <p class="mindbot">Human-like conversations with a Chatbot</p>
         <p class="mindbot">&nbsp;</p>
@@ -83,8 +99,10 @@
       </div>
     </div>
     <img class="image-8-icon" alt="" src="{% static '/public/image-8@2x.png' %}" />
-
-    <div class="features-some-of-container">
+  </section>
+    
+  <section >    
+    <div class="features-some-of-container" id="section2">
       <p class="companion">
         <span>
           <span class="features1">Features</span>
@@ -111,16 +129,18 @@
       <div class="certified-resources">Certified Resources</div>
       <img class="online-medical-service-monitor-icon" alt=""
         src="{%static 'public/onlinemedicalservicemonitor.svg'%}" />
-    </div>
-    <div class="access-parent">
-      <div class="access">24/7 Access</div>
-      <img class="call-center-support-service-icon" alt="" src="{%static 'public/callcentersupportservice.svg'%}" />
-    </div>
+      </div>
+      <div class="access-parent">
+        <div class="access">24/7 Access</div>
+        <img class="call-center-support-service-icon" alt="" src="{%static 'public/callcentersupportservice.svg'%}" />
+      </div>
     <div class="personalized-feedback-parent">
       <div class="personalized-feedback">Personalized feedback</div>
-      <img class="copy-paste-clipboard-copy-cut-icon" alt="" src="./public/copypasteclipboardcopycutpaste.svg" />
+      <img class="copy-paste-clipboard-copy-cut-icon" alt="" src="{%static 'public/copypasteclipboardcopycutpaste.svg'%}" />
     </div>
   </div>
+</section>
 </body>
+<script src="{% static 'index.js' %}"></script>
 
 </html>
