@@ -19,6 +19,7 @@ nav{
     display: flex;
     justify-content: center;
     margin-inline: 100px;
+    margin: 40px;
     /* width: 50% */
 }
 

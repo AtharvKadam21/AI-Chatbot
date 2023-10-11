@@ -38,7 +38,34 @@ const questions = [
             { text: "Often", points:3},
             { text: "Very Often", points:4},
         ]
-    }
+    },
+    {
+        question: "Do you engage in certain behaviors or rituals that you feel compelled to do, even if you'd rather not?",
+        answers: [
+            { text: "Rarely", points:1},
+            { text: "Occasionally", points:2},
+            { text: "Often", points:3},
+            { text: "Very Often", points:4},
+        ]
+    },
+    {
+        question: "Have these thoughts or rituals disrupted your daily life or daily activities in any significant way?",
+        answers: [
+            { text: "Not at all", points:1},
+            { text: "Slightly", points:2},
+            { text: "Moderately", points:3},
+            { text: "Significantly", points:4},
+        ]
+    },
+    {
+        question: "How often do you find yourself feeling excessively worried or nervous about various aspects of your life?",
+        answers: [
+            { text: "Rarely", points:1},
+            { text: "Occasionally", points:2},
+            { text: "Often", points:3},
+            { text: "Very Often", points:4},
+        ]
+    },
 ];
 
 
@@ -91,7 +118,7 @@ function selectAnswer(e) {
 
 function showScore() {
     resetState();
-    questionElement.innerHTML = score;
+    questionElement.innerHTML = 'Your score is ' + score;
 
 }
 
