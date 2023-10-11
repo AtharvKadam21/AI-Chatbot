@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="/static/dashboard.css">
+    <link rel="stylesheet" href="/static/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
@@ -36,35 +37,51 @@
             </div>
         </div>
     </nav>
-    {%for message in messages%}
+    <!-- {%for message in messages%}
     <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
         <strong>Message:</strong> {{ message }}
         <button type="button" class="close" data-dismiss="alert" aria-label="close">
             <span aria-hidden="true">&times;</span>
         </button>
-    </div>
-    {% endfor %}
-    <div>
-        
-        {% if user.is_authenticated %}
-    <h4>Hello User! </h4>
-    <h4>Login successful</h4>
-    
-    {%else%}
-    <button type="submit"><a href="/signup">signup</a></button>
-    <button type="submit"><a href="/login">login</a></button>
-    
-    {%endif%}
-    <p>Select an option to continue</p>
+    </div> -->
+    <!-- {% endfor %} -->        
 
-    <div id="chatbot">
-        <p>Start chatting</p>
-        <form action="">
-            <input type="textarea" name="" id="">
-        </form>
+        <!-- {% if user.is_authenticated %} -->
+
+<section class="main-area">
+    <div class="welcome-message">
+        <h4>Hello User! Login successful</h4>
     </div>
 
-</div>
+    <div class="btns">
+        <button class="options">Chat</button>
+        <button id="openPopup" class="options">Quiz</button>
+        <div id="popup" class="app popup">
+            <span id="closePopup" class="close-popup">&times;</span>
+            <h1>Simple quiz</h1>
+            <div class="quiz popup-content">
+                <h2 id="question">Question</h2>
+                <div id="answer-buttons">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+                <button id="next-btn">Next</button>
+            </div>
+        </div>
+    </div>
+
+</section>
+    
+    <!-- {%else%} -->
+    <!-- <button type="submit"><a href="/signup">signup</a></button> -->
+    <!-- <button type="submit"><a href="/login">login</a></button> -->
+    
+    <!-- {%endif%} -->
+
+
+    <script src="/static/script.js"></script>
 </body>
 
 </html>
